@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+.section {
+    padding: 5rem 0;
+    text-align: center;
+    margin-top: 80px; /* To offset navbar */
+}
+
+.home-section {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Ensure text is white for visibility */
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.home-section h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ff6347; /* Change to a bright color like orange */
+}
+
+.home-section p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff6347; /* Keep the paragraph text white */
+}
+
+.btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+
+.projects-section h2,
+.education-section h2,
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 1rem;
+    color: #ff6347;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.education-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education-section ul li {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.contact-section p {
+    font-size: 20px;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 4rem;
+}
